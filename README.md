@@ -1,6 +1,6 @@
 ## DBF (Data Bank File)
 
-Open source code. Free to edits and use in projects with/without to profit.
+Open source code. Free to edits and use in projects with or without to profit.
 
 It's is the DBF (Data Bank File) module. A module that allows you create, write and read a .dba and .dbu file.
 The .dba and .dbu are a new extensions intentional created to separate files and reduce read problems, but no are exclusive for this module.
