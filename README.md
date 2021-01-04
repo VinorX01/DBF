@@ -13,7 +13,7 @@ The .dba and .dbu are a new extensions intentional, created to separate files an
 
 ## How to use it?
 
-Take the file 'dbf.py' and put on your project (A normal module import.).
+Take the file 'dbf.py' and place on your project (A normal module import.).
 
 All functions on module returns a list or dictionary (It depends on the class.) with changes done, look below. 
 
