@@ -4,7 +4,7 @@
 
 Open source code. Free to edit and use on projects with or without to profit.
 
-It's is the DBF (Data Bank File) module that allows you create, write and read a .dba and .dbu file.
+The DBF (Data Bank File) module allows you create, write and read a .dba and .dbu file.
 The .dba and .dbu are a new extensions intentional, created to separate files and reduce read problems, but no are exclusive for this module.
 
 **DBA (Attribute Data Bank)**, the content is a dictionary.
