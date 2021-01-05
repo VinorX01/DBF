@@ -9,8 +9,8 @@ The content of file is returned from requisitions as list of values saved in the
 and can be access using index. Ex.: example[index_on_list]. The optional system to get values from keys, is a key verification for the each index into the list using for example, a loop 'for' or 'while'.
 
 For the "dbu()" class:
-The content of file is returned from requisitions as dictionary of values saved in the specified Id
-and can be access using id. Ex.: example[id_on_dict]. Commonly, this method save one content for each id.
+The content of file is returned from requisitions as dictionary of values saved in the specified key
+and can be access using id. Ex.: example[key_on_dict]. Commonly, this method save one content for each key.
 
 The documentation is available on Github repository README.md
 
@@ -197,7 +197,7 @@ class dbu():
         count = 0
         text = ''
         if data_compiled != '[ERROR!] Failed to compile the data' and data_compiled != '[ATTENTION!] No data found':
-            databank = open(f'{self}.udb', 'r')
+            databank = open(f'{self}.dbu', 'r')
             data_indexed = dbu.index(databank.read())
             for index in range(0, len(data_indexed)):
                 if list(data.keys())[0] == list(data_indexed.keys())[index]:
