@@ -187,7 +187,7 @@ class dbu():
             databank.close()
 
         except:
-            data_indexed = []
+            data_indexed = {}
 
         return data_indexed
 
