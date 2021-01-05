@@ -183,7 +183,7 @@ class dbu():
 
             except:
                 databank = open(f'{self}.dbu', 'r')
-            data_indexed = dbu.index(databank)
+            data_indexed = dbu.index(databank.read())
             databank.close()
 
         except:
