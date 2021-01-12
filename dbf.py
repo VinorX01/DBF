@@ -108,11 +108,11 @@ class dba():
         return data_indexed
 
     # Remove a data on file.dba
-    def remove(self, data):
+    def remove(self, key):
         bank = open(f'{self}.dba', 'r')
         databank = dba.index(bank.read())
         for index in range(0, len(databank)):
-            if list(data.keys())[0] == list(databank[index].keys())[0]:
+            if key == list(databank[index].keys())[0]:
                 del databank[index]
                 break
 
@@ -217,11 +217,10 @@ class dbu():
             return data_indexed
 
     # Remove a data on file.dbu
-    def remove(self, data):
+    def remove(self, key):
         bank = open(f'{self}.dbu', 'r')
         databank = dbu.index(bank.read())
         for index in range(0, len(databank)):
-            key = list(data.keys())[0]
             if key == list(databank.keys())[index]:
                 del databank[key]
                 break
