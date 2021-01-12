@@ -31,7 +31,7 @@ and can be access using index. Ex.: `example[index_on_list]`. The optional syste
 
 `save(name, data)` save `data` into the file with `name`. If a data key has saved, it will be replace to new data.
 
-`remove(name, data)` remove `data` into the file with `name`. If a data key has saved, it will be removed.
+`remove(name, key)` remove `key` into the file with `name`. If a data key has saved, it will be removed.
 
 Example:
 
@@ -45,7 +45,7 @@ data = dbf.dba.open('test')
 data = dbf.dba.save('test', {'example': {'attribute_key': 'attribute_value'}})
 
 # Remove data 'example' from 'test.dba'
-data = dbf.dba.remove('test', {'example': {'attribute_key': 'attribute_value'}})
+data = dbf.dba.remove('test', 'example')
 
 print(data)
 ```
@@ -67,7 +67,7 @@ It class manipulate data in key constituted of one value for each on the diction
 
 `save(name, data)` save `data` into the file with `name`. If a data key has saved, it will be replace to new data.
 
-`remove(name, data)` remove `data` into the file with `name`. If a data key has saved, it will be removed.
+`remove(name, key)` remove `key` into the file with `name`. If a data key has saved, it will be removed.
 
 Example:
 
@@ -81,7 +81,7 @@ data = dbf.dbu.open('test')
 data = dbf.dbu.save('test', {'key_name': 'key_value'})
 
 # Remove data 'example' from 'test.dbu'
-data = dbf.dbu.remove('test', {'key_name': 'key_value'})
+data = dbf.dbu.remove('test', 'key_name')
 
 print(data)
 ```
