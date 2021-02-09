@@ -12,7 +12,7 @@ For the "dbu()" class:
 The content of file is returned from requisitions as dictionary of values saved in the specified key
 and can be access using id. Ex.: example[key_on_dict]. Commonly, this method save one content for each key.
 
-The documentation is available on Github repository README.md
+The documentation is available on GitHub repository README.md
 
 by Valdivino Junior (VinorX01)
 Github repository: https://github.com/VinorX01/DBF
