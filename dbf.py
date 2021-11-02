@@ -74,7 +74,8 @@ class dba():
 
             except:
                 databank = open(f'{self}.dba', 'r')
-            data_indexed = dba.index(databank)
+
+            data_indexed = dba.index(databank.read())
             databank.close()
 
         except:
